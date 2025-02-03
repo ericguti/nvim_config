@@ -1,5 +1,3 @@
-require 'core.options'
-require 'core.keymaps'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -28,12 +26,14 @@ require('lazy').setup({
       priority = 1000, -- Very high priority is required, luarocks.nvim should run as the first plugin in your config.
       config = true,
     },
+    require 'plugins.tokyonight',
     require 'plugins.cmp',
-    require 'plugins.neotree',
     require 'plugins.lsp',
+    require 'plugins.neotree',
+    require 'plugins.telescope',
     require 'plugins.treesitter',
-    require 'plugins.telescope'
+    require 'plugins.which-key',
 })
 
-
-
+require 'core.options'
+require 'core.keymaps'
