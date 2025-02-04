@@ -8,5 +8,5 @@ vim.opt.shiftwidth = 4        -- Number of spaces to use for each step of (auto)
 vim.opt.smartindent = true
 vim.opt.softtabstop = 4
 -- vim.opt.tabstop = 4
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.cmd.colorscheme('tokyonight')
