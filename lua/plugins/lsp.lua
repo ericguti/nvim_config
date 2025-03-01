@@ -136,6 +136,19 @@
         end,
       })
 
+          --
+      vim.diagnostic.config({
+      virtual_text = false,
+      underline = false,
+      severity_sort = true,
+      float = {
+        border = 'rounded',
+        source = 'always',
+        header = '',
+        prefix = '',
+      },
+      })
+
       -- Change diagnostic symbols in the sign column (gutter)
       -- if vim.g.have_nerd_font then
       --   local signs = { ERROR = '', WARN = '', INFO = '', HINT = '' }

@@ -12,3 +12,16 @@ vim.opt.softtabstop = 4
 vim.opt.tabstop = 4 -- Number of spaces that a \c uses when displayed
 vim.opt.wrap = true
 vim.cmd.colorscheme('tokyonight')
+
+vim.diagnostic.config({
+virtual_text = false,
+underline = false,
+severity_sort = true,
+float = {
+  border = 'rounded',
+  source = 'always',
+  header = '',
+  prefix = '',
+},
+})
+
