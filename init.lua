@@ -29,10 +29,12 @@ require('lazy').setup({
     require 'plugins.tokyonight',
     require 'plugins.cmp',
     require 'plugins.lsp',
+    require 'plugins.neoterm',
     require 'plugins.neotree',
     require 'plugins.telescope',
     require 'plugins.treesitter',
     require 'plugins.which-key',
+    require 'plugins.iron',
 })
 
 require 'core.options'
